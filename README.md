@@ -7,6 +7,53 @@ Get started with the Microsoft Graph SDK for ObjectiveC by integrating it into y
 ## Installation
 
 
+### Using Swift Package Manager
+
+You can add this library using [Swift Package Manager](https://swift.org/package-manager/).
+
+#### Xcode
+
+1. In Xcode, open your project and navigate to **File → Add Package Dependencies…**
+2. Paste the repository URL:
+   ```
+   https://github.com/fmalekpour/msgraph-sdk-swift
+   ```
+3. Select the version or branch you want and click **Add Package**.
+4. Choose the **MSGraphClientSDK** library and add it to your target.
+
+#### Package.swift
+
+Add the following dependency to your `Package.swift`:
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/fmalekpour/msgraph-sdk-swift", from: "1.0.0"),
+],
+targets: [
+    .target(
+        name: "YourTarget",
+        dependencies: [
+            .product(name: "MSGraphClientSDK", package: "msgraph-sdk-swift"),
+        ]
+    ),
+]
+```
+
+Then import the module in your Swift or Objective-C files:
+
+```swift
+// Swift
+import MSGraphClientSDK
+```
+
+```objc
+// Objective-C
+@import MSGraphClientSDK;
+// or
+#import <MSGraphClientSDK/MSGraphClientSDK.h>
+```
+
+
 ### Using CocoaPods
 
 You can use [CocoaPods](https://cocoapods.org/) to remain up to date with our latest version. Include the following line in your podfile:
