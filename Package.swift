@@ -14,10 +14,6 @@ let package = Package(
             name: "MSGraphClientSDK",
             targets: ["MSGraphClientSDK"]
         ),
-        .library(
-            name: "MSGraphMSALAuthProvider",
-            targets: ["MSGraphMSALAuthProvider"]
-        ),
     ],
     dependencies: [
         .package(
@@ -28,12 +24,16 @@ let package = Package(
     targets: [
         .target(
             name: "MSGraphClientSDK",
+            dependencies: [
+                .product(name: "MSAL", package: "microsoft-authentication-library-for-objc"),
+            ],
             path: "MSGraphClientSDK/MSGraphClientSDK",
             exclude: ["Info.plist"],
             publicHeadersPath: "include",
             cSettings: [
                 .headerSearchPath("."),
                 .headerSearchPath("Authentication"),
+                .headerSearchPath("Authentication/MSAL"),
                 .headerSearchPath("Common"),
                 .headerSearchPath("Common/Session Tasks"),
                 .headerSearchPath("GraphContent/BatchContent"),
@@ -45,18 +45,6 @@ let package = Package(
                 .headerSearchPath("Middleware/Implementations/RetryHandler"),
                 .headerSearchPath("Middleware/Options"),
                 .headerSearchPath("Middleware/Protocols"),
-            ]
-        ),
-        .target(
-            name: "MSGraphMSALAuthProvider",
-            dependencies: [
-                "MSGraphClientSDK",
-                .product(name: "MSAL", package: "microsoft-authentication-library-for-objc"),
-            ],
-            path: "MSGraphMSALAuthProvider",
-            publicHeadersPath: "include",
-            cSettings: [
-                .headerSearchPath("."),
             ]
         ),
     ]

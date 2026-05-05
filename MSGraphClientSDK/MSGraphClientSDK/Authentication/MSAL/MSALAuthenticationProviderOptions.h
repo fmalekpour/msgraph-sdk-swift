@@ -3,7 +3,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <MSGraphClientSDK/MSGraphClientSDK.h>
+#import "MSAuthenticationProviderOptions.h"
 
 /*
  This class provides concrete implementation for MSAuthenticationProviderOptions protocol and options

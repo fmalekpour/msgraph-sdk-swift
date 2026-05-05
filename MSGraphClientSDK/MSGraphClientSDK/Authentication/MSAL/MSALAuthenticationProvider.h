@@ -4,7 +4,7 @@
 
 #import <Foundation/Foundation.h>
 #import <MSAL/MSAL.h>
-#import <MSGraphClientSDK/MSGraphClientSDK.h>
+#import "MSAuthenticationProvider.h"
 #import "MSALAuthenticationProviderOptions.h"
 
 /*

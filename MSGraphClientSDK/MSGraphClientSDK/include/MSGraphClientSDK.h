@@ -12,6 +12,8 @@
 // Authentication
 #import "MSAuthenticationProvider.h"
 #import "MSAuthenticationProviderOptions.h"
+#import "MSALAuthenticationProvider.h"
+#import "MSALAuthenticationProviderOptions.h"
 
 // Middleware – Protocols
 #import "MSGraphMiddleware.h"

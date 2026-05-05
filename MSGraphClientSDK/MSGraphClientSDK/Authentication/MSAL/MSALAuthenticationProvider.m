@@ -70,7 +70,7 @@
                 {
                     // Interaction required — fall back to interactive flow.
                     [self acquireTokenInteractivelyForProviderOptions:providerOptions
-                                                      withCompletion:completion];
+                                                       withCompletion:completion];
                 }
                 else
                 {
