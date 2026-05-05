@@ -4,6 +4,10 @@
 
 #import "MSALAuthenticationProvider.h"
 
+#if TARGET_OS_IPHONE
+#import <UIKit/UIKit.h>
+#endif
+
 @interface MSALAuthenticationProvider ()
 
 @property (strong, nonatomic) MSALPublicClientApplication *publicClientApplication;
@@ -57,9 +61,11 @@
     if (firstAccount)
     {
         // Silently acquire the token for the existing account.
-        [_publicClientApplication acquireTokenSilentForScopes:providerOptions.scopesArray
-                                                      account:firstAccount
-                                              completionBlock:^(MSALResult *result, NSError *error) {
+        MSALSilentTokenParameters *silentParams =
+            [[MSALSilentTokenParameters alloc] initWithScopes:providerOptions.scopesArray
+                                                      account:firstAccount];
+        [_publicClientApplication acquireTokenSilentWithParameters:silentParams
+                                                   completionBlock:^(MSALResult *result, NSError *error) {
             if (!error)
             {
                 completion(result.accessToken, nil);
@@ -89,8 +95,20 @@
 - (void)acquireTokenInteractivelyForProviderOptions:(MSALAuthenticationProviderOptions *)providerOptions
                                      withCompletion:(void (^)(NSString *, NSError *))completion
 {
-    [_publicClientApplication acquireTokenForScopes:providerOptions.scopesArray
-                                    completionBlock:^(MSALResult *result, NSError *error) {
+#if TARGET_OS_IPHONE
+    UIViewController *presenter = [self topViewController];
+    MSALWebviewParameters *webParams =
+        [[MSALWebviewParameters alloc] initWithAuthPresentationViewController:presenter];
+    MSALInteractiveTokenParameters *interactiveParams =
+        [[MSALInteractiveTokenParameters alloc] initWithScopes:providerOptions.scopesArray
+                                             webviewParameters:webParams];
+#else
+    MSALInteractiveTokenParameters *interactiveParams =
+        [[MSALInteractiveTokenParameters alloc] initWithScopes:providerOptions.scopesArray];
+#endif
+
+    [_publicClientApplication acquireTokenWithParameters:interactiveParams
+                                         completionBlock:^(MSALResult *result, NSError *error) {
         if (!error)
         {
             completion(result.accessToken, nil);
@@ -101,5 +119,35 @@
         }
     }];
 }
+
+#if TARGET_OS_IPHONE
+- (UIViewController *)topViewController
+{
+    UIWindow *keyWindow = nil;
+    for (UIScene *scene in [UIApplication sharedApplication].connectedScenes)
+    {
+        if (scene.activationState == UISceneActivationStateForegroundActive &&
+            [scene isKindOfClass:[UIWindowScene class]])
+        {
+            for (UIWindow *window in ((UIWindowScene *)scene).windows)
+            {
+                if (window.isKeyWindow)
+                {
+                    keyWindow = window;
+                    break;
+                }
+            }
+            if (keyWindow) { break; }
+        }
+    }
+
+    UIViewController *top = keyWindow.rootViewController;
+    while (top.presentedViewController)
+    {
+        top = top.presentedViewController;
+    }
+    return top;
+}
+#endif
 
 @end
