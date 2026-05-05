@@ -22,7 +22,7 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/AzureAD/microsoft-authentication-library-for-objc",
-            from: "1.2.0"
+            "1.2.0"...
         ),
     ],
     targets: [
