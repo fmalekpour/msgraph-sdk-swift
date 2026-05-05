@@ -45,6 +45,8 @@ let package = Package(
                 .headerSearchPath("Middleware/Implementations/RetryHandler"),
                 .headerSearchPath("Middleware/Options"),
                 .headerSearchPath("Middleware/Protocols"),
+                .headerSearchPath("BaseModels"),
+                .headerSearchPath("GeneratedModels"),
             ]
         ),
     ]
