@@ -6,7 +6,7 @@
 #import "MSGraphRecordingStatus.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphRecordingInfo : MSObject
 

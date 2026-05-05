@@ -6,7 +6,7 @@
 #import "MSGraphRoutingType.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphCallRoute : MSObject
 

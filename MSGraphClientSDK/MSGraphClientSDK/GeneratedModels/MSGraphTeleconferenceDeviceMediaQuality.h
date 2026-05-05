@@ -5,7 +5,7 @@
 @class MSDuration; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphTeleconferenceDeviceMediaQuality : MSObject
 

@@ -5,7 +5,7 @@
 #import "MSGraphStateManagementSetting.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphWindowsFirewallNetworkProfile : MSObject
 

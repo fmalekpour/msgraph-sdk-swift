@@ -5,7 +5,7 @@
 @class MSGraphFileHash; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphFileSecurityState : MSObject
 

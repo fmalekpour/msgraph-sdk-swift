@@ -4,7 +4,7 @@
 @class MSGraphAccessReviewSet, MSGraphAppConsentApprovalRoute, MSGraphTermsOfUseContainer; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphIdentityGovernance : MSObject
 

@@ -6,7 +6,7 @@
 #import "MSGraphAlertStatus.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphAlertHistoryState : MSObject
 

@@ -5,7 +5,7 @@
 @class MSGraphMeetingTimeSuggestion; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphMeetingTimeSuggestionsResult : MSObject
 

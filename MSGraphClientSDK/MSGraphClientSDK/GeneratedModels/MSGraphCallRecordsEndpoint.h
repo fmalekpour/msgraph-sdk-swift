@@ -5,7 +5,7 @@
 @class MSGraphCallRecordsUserAgent; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphCallRecordsEndpoint : MSObject
 

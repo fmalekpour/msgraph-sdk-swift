@@ -6,7 +6,7 @@
 #import "MSGraphRatingCanadaTelevisionType.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphMediaContentRatingCanada : MSObject
 

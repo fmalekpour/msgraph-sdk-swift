@@ -5,7 +5,7 @@
 #import "MSGraphCallRecordsFailureStage.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphCallRecordsFailureInfo : MSObject
 

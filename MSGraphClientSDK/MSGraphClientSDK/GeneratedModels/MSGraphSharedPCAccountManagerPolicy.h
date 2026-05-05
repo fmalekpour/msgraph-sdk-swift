@@ -5,7 +5,7 @@
 #import "MSGraphSharedPCAccountDeletionPolicyType.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphSharedPCAccountManagerPolicy : MSObject
 

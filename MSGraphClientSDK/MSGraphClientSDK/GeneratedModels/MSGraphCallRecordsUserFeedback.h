@@ -6,7 +6,7 @@
 #import "MSGraphCallRecordsUserFeedbackRating.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphCallRecordsUserFeedback : MSObject
 

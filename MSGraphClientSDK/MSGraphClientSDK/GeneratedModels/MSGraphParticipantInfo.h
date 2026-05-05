@@ -6,7 +6,7 @@
 #import "MSGraphEndpointType.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphParticipantInfo : MSObject
 

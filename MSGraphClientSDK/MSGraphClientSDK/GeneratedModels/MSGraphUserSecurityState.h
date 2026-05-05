@@ -7,7 +7,7 @@
 #import "MSGraphUserAccountSecurityType.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphUserSecurityState : MSObject
 

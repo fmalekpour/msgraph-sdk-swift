@@ -4,7 +4,7 @@
 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphWin32LobAppRestartSettings : MSObject
 

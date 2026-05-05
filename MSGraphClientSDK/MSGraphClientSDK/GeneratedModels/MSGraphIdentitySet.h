@@ -5,7 +5,7 @@
 @class MSGraphIdentity; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphIdentitySet : MSObject
 

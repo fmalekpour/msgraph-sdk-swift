@@ -6,7 +6,7 @@
 #import "MSGraphRatingNewZealandTelevisionType.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphMediaContentRatingNewZealand : MSObject
 

@@ -7,7 +7,7 @@
 #import "MSGraphRiskLevel.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphConditionalAccessConditionSet : MSObject
 

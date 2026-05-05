@@ -5,7 +5,7 @@
 @class MSGraphFreeBusyError, MSGraphScheduleItem, MSGraphWorkingHours; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphScheduleInformation : MSObject
 

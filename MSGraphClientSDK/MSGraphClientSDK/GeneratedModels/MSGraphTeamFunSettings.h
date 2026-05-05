@@ -5,7 +5,7 @@
 #import "MSGraphGiphyRatingType.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphTeamFunSettings : MSObject
 

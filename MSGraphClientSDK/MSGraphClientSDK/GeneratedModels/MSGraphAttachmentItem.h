@@ -5,7 +5,7 @@
 #import "MSGraphAttachmentType.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphAttachmentItem : MSObject
 

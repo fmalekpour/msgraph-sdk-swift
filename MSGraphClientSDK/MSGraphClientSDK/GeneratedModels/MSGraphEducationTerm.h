@@ -5,7 +5,7 @@
 @class MSDate; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphEducationTerm : MSObject
 

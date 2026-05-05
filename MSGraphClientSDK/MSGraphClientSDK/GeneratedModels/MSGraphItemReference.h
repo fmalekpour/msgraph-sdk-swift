@@ -5,7 +5,7 @@
 @class MSGraphSharepointIds; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphItemReference : MSObject
 

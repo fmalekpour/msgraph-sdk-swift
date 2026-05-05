@@ -5,7 +5,7 @@
 @class MSGraphDateTimeTimeZone, MSGraphLocation; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphReminder : MSObject
 

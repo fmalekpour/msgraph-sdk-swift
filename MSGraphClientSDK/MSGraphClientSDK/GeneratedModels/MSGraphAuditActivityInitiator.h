@@ -5,7 +5,7 @@
 @class MSGraphAppIdentity, MSGraphUserIdentity; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphAuditActivityInitiator : MSObject
 

@@ -2,9 +2,9 @@
 
 
 
-#import "MSDate.h"
-#import "MSTimeOfDay.h"
-#import "MSDuration.h"
+#import "../BaseModels/MSDate.h"
+#import "../BaseModels/MSTimeOfDay.h"
+#import "../BaseModels/MSDuration.h"
 #import "MSGraphAppliedConditionalAccessPolicyResult.h"
 #import "MSGraphConditionalAccessStatus.h"
 #import "MSGraphGroupType.h"

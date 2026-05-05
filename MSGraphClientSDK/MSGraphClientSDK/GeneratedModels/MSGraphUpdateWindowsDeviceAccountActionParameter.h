@@ -5,7 +5,7 @@
 @class MSGraphWindowsDeviceAccount; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphUpdateWindowsDeviceAccountActionParameter : MSObject
 

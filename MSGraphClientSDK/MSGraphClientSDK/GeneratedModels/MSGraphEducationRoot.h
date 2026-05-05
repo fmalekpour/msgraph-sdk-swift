@@ -4,7 +4,7 @@
 @class MSGraphEducationClass, MSGraphEducationUser, MSGraphEducationSchool; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphEducationRoot : MSObject
 

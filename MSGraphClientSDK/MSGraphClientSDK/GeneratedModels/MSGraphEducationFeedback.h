@@ -5,7 +5,7 @@
 @class MSGraphIdentitySet, MSGraphEducationItemBody; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphEducationFeedback : MSObject
 

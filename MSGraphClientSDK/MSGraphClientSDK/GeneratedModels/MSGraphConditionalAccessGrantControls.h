@@ -5,7 +5,7 @@
 #import "MSGraphConditionalAccessGrantControl.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphConditionalAccessGrantControls : MSObject
 

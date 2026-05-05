@@ -6,7 +6,7 @@
 #import "MSGraphCallRecordsMediaStreamDirection.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphCallRecordsMediaStream : MSObject
 

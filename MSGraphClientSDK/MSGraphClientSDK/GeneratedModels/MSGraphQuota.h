@@ -5,7 +5,7 @@
 @class MSGraphStoragePlanInformation; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphQuota : MSObject
 

@@ -7,7 +7,7 @@
 #import "MSGraphRecurrencePatternType.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphRecurrencePattern : MSObject
 

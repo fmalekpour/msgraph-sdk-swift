@@ -7,7 +7,7 @@
 #import "MSGraphLifecycleEventType.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphChangeNotification : MSObject
 

@@ -5,7 +5,7 @@
 #import "MSGraphPhoneType.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphPhone : MSObject
 

@@ -5,7 +5,7 @@
 @class MSGraphEmailAddress; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphRecipient : MSObject
 

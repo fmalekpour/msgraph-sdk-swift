@@ -5,7 +5,7 @@
 #import "MSGraphMediaState.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphCallMediaState : MSObject
 

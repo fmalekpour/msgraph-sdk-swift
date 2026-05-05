@@ -5,7 +5,7 @@
 @class MSGraphPermissionScope, MSGraphPreAuthorizedApplication; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphApiApplication : MSObject
 

@@ -5,7 +5,7 @@
 #import "MSGraphSecurityResourceType.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphSecurityResource : MSObject
 

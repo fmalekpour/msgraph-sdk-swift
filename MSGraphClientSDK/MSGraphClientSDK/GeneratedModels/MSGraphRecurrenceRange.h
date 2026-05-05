@@ -6,7 +6,7 @@
 #import "MSGraphRecurrenceRangeType.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphRecurrenceRange : MSObject
 

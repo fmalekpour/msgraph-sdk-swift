@@ -5,7 +5,7 @@
 @class MSGraphCertificationControl; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphComplianceInformation : MSObject
 

@@ -5,7 +5,7 @@
 @class MSGraphOptionalClaim; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphOptionalClaims : MSObject
 

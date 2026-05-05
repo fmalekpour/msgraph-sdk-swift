@@ -6,7 +6,7 @@
 #import "MSGraphDelegateMeetingMessageDeliveryOptions.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphMailboxSettings : MSObject
 

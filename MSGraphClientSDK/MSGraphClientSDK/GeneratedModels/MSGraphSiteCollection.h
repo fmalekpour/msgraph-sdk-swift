@@ -5,7 +5,7 @@
 @class MSGraphRoot; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphSiteCollection : MSObject
 

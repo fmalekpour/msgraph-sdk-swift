@@ -6,7 +6,7 @@
 #import "MSGraphOnlineMeetingRole.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphMeetingParticipantInfo : MSObject
 

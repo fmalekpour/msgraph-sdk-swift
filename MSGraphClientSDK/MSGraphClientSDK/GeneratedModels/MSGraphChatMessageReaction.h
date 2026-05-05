@@ -5,7 +5,7 @@
 @class MSGraphChatMessageReactionIdentitySet; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphChatMessageReaction : MSObject
 

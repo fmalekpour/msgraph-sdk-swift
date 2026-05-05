@@ -7,7 +7,7 @@
 #import "MSGraphAutomaticRepliesStatus.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphAutomaticRepliesSetting : MSObject
 

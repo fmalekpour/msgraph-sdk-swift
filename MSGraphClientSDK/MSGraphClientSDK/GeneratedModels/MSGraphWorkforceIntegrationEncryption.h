@@ -5,7 +5,7 @@
 #import "MSGraphWorkforceIntegrationEncryptionProtocol.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphWorkforceIntegrationEncryption : MSObject
 

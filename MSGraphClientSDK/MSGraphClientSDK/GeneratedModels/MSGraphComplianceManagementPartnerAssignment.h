@@ -5,7 +5,7 @@
 @class MSGraphDeviceAndAppManagementAssignmentTarget; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphComplianceManagementPartnerAssignment : MSObject
 

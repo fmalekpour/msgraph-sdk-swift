@@ -5,7 +5,7 @@
 #import "MSGraphIosNotificationAlertType.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphIosNotificationSettings : MSObject
 

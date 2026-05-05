@@ -5,7 +5,7 @@
 @class MSGraphPhone; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphOnlineMeetingInfo : MSObject
 

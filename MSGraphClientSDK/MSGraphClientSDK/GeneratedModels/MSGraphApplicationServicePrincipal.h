@@ -5,7 +5,7 @@
 @class MSGraphApplication, MSGraphServicePrincipal; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphApplicationServicePrincipal : MSObject
 

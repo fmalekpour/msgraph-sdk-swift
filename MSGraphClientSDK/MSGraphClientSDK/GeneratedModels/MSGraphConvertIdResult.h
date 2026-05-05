@@ -5,7 +5,7 @@
 @class MSGraphGenericError; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphConvertIdResult : MSObject
 

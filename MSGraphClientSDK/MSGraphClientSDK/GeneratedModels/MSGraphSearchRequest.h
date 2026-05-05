@@ -6,7 +6,7 @@
 #import "MSGraphEntityType.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphSearchRequest : MSObject
 

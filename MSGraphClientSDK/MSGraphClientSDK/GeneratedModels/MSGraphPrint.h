@@ -4,7 +4,7 @@
 @class MSGraphPrintSettings, MSGraphPrintConnector, MSGraphPrintOperation, MSGraphPrinter, MSGraphPrintService, MSGraphPrinterShare, MSGraphPrintTaskDefinition; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphPrint : MSObject
 

@@ -7,7 +7,7 @@
 #import "MSGraphCallRecordsWifiRadioType.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphCallRecordsNetworkInfo : MSObject
 

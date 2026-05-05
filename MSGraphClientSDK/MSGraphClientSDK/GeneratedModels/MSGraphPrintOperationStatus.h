@@ -5,7 +5,7 @@
 #import "MSGraphPrintOperationProcessingState.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphPrintOperationStatus : MSObject
 

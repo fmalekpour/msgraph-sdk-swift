@@ -5,7 +5,7 @@
 @class MSGraphPatternedRecurrence, MSGraphTimeRange; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphShiftAvailability : MSObject
 

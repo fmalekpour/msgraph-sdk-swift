@@ -5,7 +5,7 @@
 @class MSGraphCallRecordsDeviceInfo, MSGraphCallRecordsNetworkInfo, MSGraphCallRecordsMediaStream; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphCallRecordsMedia : MSObject
 

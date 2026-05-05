@@ -5,7 +5,7 @@
 @class MSGraphPendingContentUpdate; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphPendingOperations : MSObject
 

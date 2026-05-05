@@ -5,7 +5,7 @@
 #import "MSGraphCallTranscriptionState.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphCallTranscriptionInfo : MSObject
 

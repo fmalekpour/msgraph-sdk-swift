@@ -3,7 +3,7 @@
 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphRoleManagement : MSObject
 

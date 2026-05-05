@@ -4,7 +4,7 @@
 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphWindows10NetworkProxyServer : MSObject
 

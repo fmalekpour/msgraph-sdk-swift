@@ -8,7 +8,7 @@
 #import "MSGraphSensitivity.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphMessageRulePredicates : MSObject
 

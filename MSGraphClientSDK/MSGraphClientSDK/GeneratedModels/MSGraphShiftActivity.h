@@ -5,7 +5,7 @@
 #import "MSGraphScheduleEntityTheme.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphShiftActivity : MSObject
 

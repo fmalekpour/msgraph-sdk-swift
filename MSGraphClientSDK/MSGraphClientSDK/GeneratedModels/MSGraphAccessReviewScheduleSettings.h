@@ -5,7 +5,7 @@
 @class MSGraphAccessReviewApplyAction, MSGraphPatternedRecurrence; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphAccessReviewScheduleSettings : MSObject
 

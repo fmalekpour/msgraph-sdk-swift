@@ -5,7 +5,7 @@
 #import "MSGraphImportedWindowsAutopilotDeviceIdentityImportStatus.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphImportedWindowsAutopilotDeviceIdentityState : MSObject
 

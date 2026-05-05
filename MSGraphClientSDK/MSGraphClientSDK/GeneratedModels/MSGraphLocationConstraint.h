@@ -5,7 +5,7 @@
 @class MSGraphLocationConstraintItem; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphLocationConstraint : MSObject
 

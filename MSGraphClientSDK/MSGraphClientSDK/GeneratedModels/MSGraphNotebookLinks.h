@@ -5,7 +5,7 @@
 @class MSGraphExternalLink; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphNotebookLinks : MSObject
 

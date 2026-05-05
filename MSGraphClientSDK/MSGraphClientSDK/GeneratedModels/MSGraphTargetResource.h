@@ -6,7 +6,7 @@
 #import "MSGraphGroupType.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphTargetResource : MSObject
 

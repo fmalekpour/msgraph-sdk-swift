@@ -5,7 +5,7 @@
 #import "MSGraphFido2RestrictionEnforcementType.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphFido2KeyRestrictions : MSObject
 

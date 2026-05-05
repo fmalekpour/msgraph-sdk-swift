@@ -5,7 +5,7 @@
 #import "MSGraphFileHashType.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphFileHash : MSObject
 

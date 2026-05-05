@@ -5,7 +5,7 @@
 #import "MSGraphConditionalAccessDevicePlatform.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphConditionalAccessPlatforms : MSObject
 

@@ -5,7 +5,7 @@
 @class MSGraphGeoCoordinates; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphSignInLocation : MSObject
 

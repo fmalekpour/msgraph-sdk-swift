@@ -6,7 +6,7 @@
 #import "MSGraphFollowupFlagStatus.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphFollowupFlag : MSObject
 

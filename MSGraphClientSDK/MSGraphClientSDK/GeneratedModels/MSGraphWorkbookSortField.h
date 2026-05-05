@@ -5,7 +5,7 @@
 @class MSGraphWorkbookIcon; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphWorkbookSortField : MSObject
 

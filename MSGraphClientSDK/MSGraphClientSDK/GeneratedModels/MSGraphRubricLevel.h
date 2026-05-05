@@ -5,7 +5,7 @@
 @class MSGraphEducationItemBody, MSGraphEducationAssignmentGradeType; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphRubricLevel : MSObject
 

@@ -5,7 +5,7 @@
 @class MSGraphImplicitGrantSettings; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphWebApplication : MSObject
 

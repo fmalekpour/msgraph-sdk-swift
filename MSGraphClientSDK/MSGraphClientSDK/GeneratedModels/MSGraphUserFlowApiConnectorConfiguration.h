@@ -5,7 +5,7 @@
 @class MSGraphIdentityApiConnector; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphUserFlowApiConnectorConfiguration : MSObject
 

@@ -5,7 +5,7 @@
 @class MSGraphApplicationEnforcedRestrictionsSessionControl, MSGraphCloudAppSecuritySessionControl, MSGraphPersistentBrowserSessionControl, MSGraphSignInFrequencySessionControl; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphConditionalAccessSessionControls : MSObject
 

@@ -5,7 +5,7 @@
 #import "MSGraphWin32LobAppReturnCodeType.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphWin32LobAppReturnCode : MSObject
 

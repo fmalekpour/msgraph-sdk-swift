@@ -6,7 +6,7 @@
 #import "MSGraphOnenoteUserRole.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphCopyNotebookModel : MSObject
 

@@ -5,7 +5,7 @@
 #import "MSGraphExternalConnectorsExternalItemContentType.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphExternalConnectorsExternalItemContent : MSObject
 

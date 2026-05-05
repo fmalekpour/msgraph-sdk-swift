@@ -5,7 +5,7 @@
 @class MSGraphChangeNotification; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphChangeNotificationCollection : MSObject
 

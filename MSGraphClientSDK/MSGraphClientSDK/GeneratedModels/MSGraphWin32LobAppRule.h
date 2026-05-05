@@ -5,7 +5,7 @@
 #import "MSGraphWin32LobAppRuleType.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphWin32LobAppRule : MSObject
 

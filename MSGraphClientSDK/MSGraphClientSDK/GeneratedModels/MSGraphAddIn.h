@@ -5,7 +5,7 @@
 @class MSGraphKeyValue; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphAddIn : MSObject
 

@@ -6,7 +6,7 @@
 #import "MSGraphProvisioningResult.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphProvisioningStatusInfo : MSObject
 

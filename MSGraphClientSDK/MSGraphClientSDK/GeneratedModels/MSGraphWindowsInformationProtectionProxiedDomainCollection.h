@@ -5,7 +5,7 @@
 @class MSGraphProxiedDomain; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphWindowsInformationProtectionProxiedDomainCollection : MSObject
 

@@ -5,7 +5,7 @@
 @class MSGraphSearchHitsContainer; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphSearchResponse : MSObject
 

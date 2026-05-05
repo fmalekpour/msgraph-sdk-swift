@@ -5,7 +5,7 @@
 @class MSGraphInsightIdentity, MSGraphResourceReference; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphSharingDetail : MSObject
 

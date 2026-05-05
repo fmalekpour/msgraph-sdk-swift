@@ -5,7 +5,7 @@
 @class MSGraphEducationItemBody; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphRubricQualityFeedbackModel : MSObject
 

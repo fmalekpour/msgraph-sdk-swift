@@ -5,7 +5,7 @@
 @class MSGraphFileSystemInfo; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphDriveItemUploadableProperties : MSObject
 

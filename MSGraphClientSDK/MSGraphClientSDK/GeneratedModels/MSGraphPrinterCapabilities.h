@@ -13,7 +13,7 @@
 #import "MSGraphPrintScaling.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphPrinterCapabilities : MSObject
 

@@ -5,7 +5,7 @@
 @class MSGraphTeleconferenceDeviceMediaQuality; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphTeleconferenceDeviceQuality : MSObject
 

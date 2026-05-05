@@ -5,7 +5,7 @@
 @class MSTimeOfDay; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphTimeRange : MSObject
 

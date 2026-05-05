@@ -5,7 +5,7 @@
 @class MSGraphMobileAppIdentifier; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphManagedAppPolicyDeploymentSummaryPerApp : MSObject
 

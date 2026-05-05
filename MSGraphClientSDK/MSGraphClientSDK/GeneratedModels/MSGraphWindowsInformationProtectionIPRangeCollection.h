@@ -5,7 +5,7 @@
 @class MSGraphIpRange; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphWindowsInformationProtectionIPRangeCollection : MSObject
 

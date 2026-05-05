@@ -5,7 +5,7 @@
 #import "MSGraphTeamworkActivityTopicSource.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphTeamworkActivityTopic : MSObject
 

@@ -5,7 +5,7 @@
 @class MSGraphMeetingParticipantInfo; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphMeetingParticipants : MSObject
 

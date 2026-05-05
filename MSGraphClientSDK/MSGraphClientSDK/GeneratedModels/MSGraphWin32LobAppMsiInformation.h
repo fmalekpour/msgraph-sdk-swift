@@ -5,7 +5,7 @@
 #import "MSGraphWin32LobAppMsiPackageType.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphWin32LobAppMsiInformation : MSObject
 

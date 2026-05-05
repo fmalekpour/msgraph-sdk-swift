@@ -6,7 +6,7 @@
 #import "MSGraphDayOfWeek.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphStandardTimeZoneOffset : MSObject
 

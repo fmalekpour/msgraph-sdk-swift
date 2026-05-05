@@ -5,7 +5,7 @@
 @class MSGraphPublicErrorDetail; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphPublicInnerError : MSObject
 

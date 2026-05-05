@@ -7,7 +7,7 @@
 #import "MSGraphRegistryValueType.h"
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphRegistryKeyState : MSObject
 

@@ -5,7 +5,7 @@
 @class MSGraphResourceAccess; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphRequiredResourceAccess : MSObject
 

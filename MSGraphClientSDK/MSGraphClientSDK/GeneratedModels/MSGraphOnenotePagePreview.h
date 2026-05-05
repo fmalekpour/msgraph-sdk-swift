@@ -5,7 +5,7 @@
 @class MSGraphOnenotePagePreviewLinks; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphOnenotePagePreview : MSObject
 

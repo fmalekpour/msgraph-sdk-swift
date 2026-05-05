@@ -5,7 +5,7 @@
 @class MSGraphEntity; 
 
 
-#import "MSObject.h"
+#import "../BaseModels/MSObject.h"
 
 @interface MSGraphSearchHit : MSObject
 
