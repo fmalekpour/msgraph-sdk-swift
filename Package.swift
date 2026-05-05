@@ -6,13 +6,23 @@ import PackageDescription
 let package = Package(
     name: "MSGraphClientSDK",
     platforms: [
-        .iOS(.v9),
-        .macOS(.v10_10),
+        .iOS(.v14),
+        .macOS(.v11),
     ],
     products: [
         .library(
             name: "MSGraphClientSDK",
             targets: ["MSGraphClientSDK"]
+        ),
+        .library(
+            name: "MSGraphMSALAuthProvider",
+            targets: ["MSGraphMSALAuthProvider"]
+        ),
+    ],
+    dependencies: [
+        .package(
+            url: "https://github.com/AzureAD/microsoft-authentication-library-for-objc",
+            from: "1.2.0"
         ),
     ],
     targets: [
@@ -35,6 +45,18 @@ let package = Package(
                 .headerSearchPath("Middleware/Implementations/RetryHandler"),
                 .headerSearchPath("Middleware/Options"),
                 .headerSearchPath("Middleware/Protocols"),
+            ]
+        ),
+        .target(
+            name: "MSGraphMSALAuthProvider",
+            dependencies: [
+                "MSGraphClientSDK",
+                .product(name: "MSAL", package: "microsoft-authentication-library-for-objc"),
+            ],
+            path: "MSGraphMSALAuthProvider",
+            publicHeadersPath: "include",
+            cSettings: [
+                .headerSearchPath("."),
             ]
         ),
     ]
