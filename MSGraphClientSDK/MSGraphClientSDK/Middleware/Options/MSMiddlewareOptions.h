@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "../../Common/MSConstants.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @protocol MSMiddlewareOptions <NSObject>
 
 @required
@@ -19,3 +21,5 @@
 @property MSMiddlewareOptionsType middlewareOptionsType;
 
 @end
+
+NS_ASSUME_NONNULL_END

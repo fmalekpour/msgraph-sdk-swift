@@ -6,12 +6,14 @@
 
 @class MSURLSessionTask;
 
+NS_ASSUME_NONNULL_BEGIN
+
 /*
  This protocol defines the required set of methods to be implemented by the Classes which will become the part of middleware chain.
  */
 
 //Completion handler to be called when request finishes
-typedef void (^HTTPRequestCompletionHandler)(id data, NSURLResponse * _Nullable response, NSError * _Nullable error);
+typedef void (^HTTPRequestCompletionHandler)(id _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error);
 
 @protocol MSGraphMiddleware <NSObject>
 
@@ -29,3 +31,5 @@ typedef void (^HTTPRequestCompletionHandler)(id data, NSURLResponse * _Nullable 
 - (void)setNext:(id<MSGraphMiddleware>)nextMiddleware;
 
 @end
+
+NS_ASSUME_NONNULL_END

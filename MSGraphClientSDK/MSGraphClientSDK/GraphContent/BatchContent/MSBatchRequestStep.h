@@ -4,6 +4,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /*
  To make batch request, native request objects needs to be clubbed with some 'id' and 'dependsOn'[optional] values. This class provides a mechanism to build such an object i.e. MSBatchRequestStep.
  */
@@ -11,7 +13,7 @@
 
 @property (strong, nonatomic) NSString *requestId;
 @property (strong, nonatomic) NSMutableURLRequest *request;
-@property (strong, nonatomic) NSMutableArray *arrayOfDependsOnIds;
+@property (strong, nonatomic, nullable) NSMutableArray *arrayOfDependsOnIds;
 
 /*
  Creates and returns an instance of MSBatchRequestStep.
@@ -20,7 +22,9 @@
  @param requestIds The array of request Ids in string format which this batch request step depends on.
  @return The MSBatchRequestStep object created using above parameters.
  */
-- (instancetype)initWithId:(nonnull NSString *)requestId request:(nonnull NSMutableURLRequest *)urlRequest andDependsOn:(NSArray<NSString *> *)requestIds;
+- (instancetype)initWithId:(NSString *)requestId request:(NSMutableURLRequest *)urlRequest andDependsOn:(nullable NSArray<NSString *> *)requestIds;
 
 @end
+
+NS_ASSUME_NONNULL_END
 

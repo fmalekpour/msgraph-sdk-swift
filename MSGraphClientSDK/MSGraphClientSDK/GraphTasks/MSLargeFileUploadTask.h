@@ -8,6 +8,8 @@
 #define DefaultChunkSize 5*1024*1024
 #define RequiredChunkSizeIncrement 320*1024
 
+NS_ASSUME_NONNULL_BEGIN
+
 /*
  This class is Generic base class for large file upload tasks and handles all the basic functionalities of a large file uploader
  */
@@ -22,7 +24,7 @@
  @param chunkSize Size of a small chunk which the file will be split into. Should be in multiples of 320KB. Default value is 5MB.
  @return MSLargeFileUploadTask instance
  */
--(instancetype)initWithClient:(nonnull MSHTTPClient *)httpClient fileData:(nonnull NSData *)fileData uploadSessionDictionary:(nonnull NSDictionary *)uploadSessionDictionary andChunkSize:(NSInteger)chunkSize;
+-(instancetype)initWithClient:(MSHTTPClient *)httpClient fileData:(NSData *)fileData uploadSessionDictionary:(NSDictionary *)uploadSessionDictionary andChunkSize:(NSInteger)chunkSize;
 
 /*
  This function will start uploading all the small segments of the file one by one returning the response in completion handler in case there is any error or the upload process gets completed.
@@ -39,3 +41,5 @@
 + (void)createUploadSessionFromRequest:(NSMutableURLRequest *)urlRequest andHTTPClient:(MSHTTPClient *)httpClient completionBlock:(HTTPRequestCompletionHandler)completionHandler;
 
 @end
+
+NS_ASSUME_NONNULL_END

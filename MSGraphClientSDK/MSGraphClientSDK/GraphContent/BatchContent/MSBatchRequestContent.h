@@ -6,6 +6,8 @@
 
 @class MSBatchRequestStep;
 
+NS_ASSUME_NONNULL_BEGIN
+
 /*
  To make batch requests, all the individual request needs to be clubbed in one single request body. This class provides mechanism to create that content for batch requests.
  Maximum limit of MSBatchRequestSteps in one single MSBatchRequestContent is set to 20.
@@ -41,4 +43,6 @@
 - (NSMutableDictionary *)getBatchRequestContent;
 
 @end
+
+NS_ASSUME_NONNULL_END
 

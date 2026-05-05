@@ -7,6 +7,8 @@
 
 @class MSURLSessionTask;
 
+NS_ASSUME_NONNULL_BEGIN
+
 /*
  Methods in this protocol keep you updated with the information that Redirect Handler might throw.
  */
@@ -25,7 +27,7 @@
 /*
  This property is to hold a reference to the class which will implement the Redirect Handler Delegate
  */
-@property (nonatomic, weak) id<MSRedirectHandlerDelegate> redirectHandlerDelegate;
+@property (nonatomic, weak, nullable) id<MSRedirectHandlerDelegate> redirectHandlerDelegate;
 
 /*
  If we keep getting the redirect response codes, then this is the Maximum number of redirects which will be done before finising the execution of a request. Upper limit is 20.
@@ -41,3 +43,5 @@
 - (instancetype)initWithMaxRedirects:(NSInteger)maxRedirects andError:(NSError **)error;
 
 @end
+
+NS_ASSUME_NONNULL_END

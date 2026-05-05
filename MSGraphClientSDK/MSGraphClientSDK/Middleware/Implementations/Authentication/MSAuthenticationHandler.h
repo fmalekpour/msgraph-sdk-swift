@@ -6,6 +6,8 @@
 #import "../../../Authentication/MSAuthenticationProvider.h"
 #import "../../Protocols/MSGraphMiddleware.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 /*
  This class provides the mechanism to communicate with authentication provider. It is implmented as a middleware so it will be called during the execution of network calls.
  */
@@ -23,3 +25,5 @@
 - (instancetype)initWithAuthenticationProvider:(id<MSAuthenticationProvider>)authProvider;
 
 @end
+
+NS_ASSUME_NONNULL_END

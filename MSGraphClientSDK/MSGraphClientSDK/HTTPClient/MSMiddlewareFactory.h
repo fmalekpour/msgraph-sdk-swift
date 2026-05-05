@@ -5,6 +5,8 @@
 #import <Foundation/Foundation.h>
 #import "../Middleware/Protocols/MSGraphMiddleware.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface MSMiddlewareFactory : NSObject
 
 /*
@@ -26,3 +28,5 @@ typedef NS_ENUM(NSInteger, MSMiddlewareType)
 +(id<MSGraphMiddleware>)createMiddleware:(MSMiddlewareType)middlewareType;
 
 @end
+
+NS_ASSUME_NONNULL_END

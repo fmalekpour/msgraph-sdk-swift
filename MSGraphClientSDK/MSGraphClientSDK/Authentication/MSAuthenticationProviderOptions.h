@@ -4,6 +4,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /**
  The `MSAuthenticationProviderOptions` is a protocol that is used to define the contract for the options required by AuthenticationProvider */
 @protocol MSAuthenticationProviderOptions <NSObject>
@@ -16,3 +18,5 @@
 @property NSArray<NSString *> *scopesArray;
 
 @end
+
+NS_ASSUME_NONNULL_END

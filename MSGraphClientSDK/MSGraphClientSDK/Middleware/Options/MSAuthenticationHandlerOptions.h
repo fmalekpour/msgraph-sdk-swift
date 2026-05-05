@@ -6,6 +6,9 @@
 #import "MSMiddlewareOptions.h"
 #import "../../Authentication/MSAuthenticationProvider.h"
 #import "../../Authentication/MSAuthenticationProviderOptions.h"
+
+NS_ASSUME_NONNULL_BEGIN
+
 /*
  This class provides options to control the behaviour of Authentication Handler.
  */
@@ -28,3 +31,5 @@
 - (instancetype)initWithAuthenticationProvider:(id<MSAuthenticationProvider>)authProvider andAuthProviderOptions:(id<MSAuthenticationProviderOptions>)authProviderOptions;
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -7,6 +7,8 @@
 #ifndef MSErrorCodes_h
 #define MSErrorCodes_h
 
+NS_ASSUME_NONNULL_BEGIN
+
 
 typedef NS_ENUM(NSInteger, MSErrorCode)
 {
@@ -27,5 +29,7 @@ extern NSString *const MSErrorStringMaximumBatchStepLimitReachedReason;
 
 extern NSString *const MSErrorStringRequestIdNotAvailableDescription;
 extern NSString *const MSErrorStringRequestIdNotAvailableReason;
+
+NS_ASSUME_NONNULL_END
 
 #endif

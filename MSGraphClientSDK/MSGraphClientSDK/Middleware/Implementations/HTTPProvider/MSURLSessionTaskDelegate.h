@@ -4,7 +4,9 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void(^MSURLSessionTaskCompletion)(id responseObject, NSURLResponse *response, NSError *error);
+NS_ASSUME_NONNULL_BEGIN
+
+typedef void(^MSURLSessionTaskCompletion)(id _Nullable responseObject, NSURLResponse * _Nullable response, NSError * _Nullable error);
 
 /**
  *  'MSURLSessionTaskDelegate' the delegate object for a given NSURLSessionTask
@@ -16,7 +18,7 @@ typedef void(^MSURLSessionTaskCompletion)(id responseObject, NSURLResponse *resp
  @param  progress an object reference to a progress
  @param  completion a completion handler to be called when the task completes
  */
-- (instancetype)initWithProgressRef:(NSProgress * __autoreleasing *)progress
+- (instancetype)initWithProgressRef:(NSProgress * __autoreleasing _Nullable * _Nullable)progress
                         completion:(MSURLSessionTaskCompletion)completion;
 
 /**
@@ -37,7 +39,7 @@ typedef void(^MSURLSessionTaskCompletion)(id responseObject, NSURLResponse *resp
  @param  task the task that was completed
  @param  error any error that occurred during the task
  */
-- (void)task:(NSURLSessionTask *)task didCompleteWithError:(NSError *)error;
+- (void)task:(NSURLSessionTask *)task didCompleteWithError:(nullable NSError *)error;
 
 /**
  This method should be called when the download task is completed
@@ -53,3 +55,5 @@ typedef void(^MSURLSessionTaskCompletion)(id responseObject, NSURLResponse *resp
  */
 - (void)task:(NSURLSessionTask *)task didRedirectWithResponse:(NSURLResponse *)response;
 @end
+
+NS_ASSUME_NONNULL_END

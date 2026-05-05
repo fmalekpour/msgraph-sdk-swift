@@ -7,20 +7,22 @@
 
 @class MSURLSessionDataTask, MSURLSessionDownloadTask, MSURLSessionUploadTask;
 
+NS_ASSUME_NONNULL_BEGIN
+
 /**
  Completion handler to be called from MSHTTPClient on download completion.
  */
-typedef void (^MSRawDownloadCompletionHandler)(NSURL *location, NSURLResponse *response, NSError *error);
+typedef void (^MSRawDownloadCompletionHandler)(NSURL * _Nullable location, NSURLResponse * _Nullable response, NSError * _Nullable error);
 
 /**
  Completion handler to be called from MSHTTPClient on upload completion.
  */
-typedef void (^MSRawUploadCompletionHandler)(NSData *data, NSURLResponse *response, NSError *error);
+typedef void (^MSRawUploadCompletionHandler)(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error);
 
 /**
  Completion handler to be called form MSHTTPClient on a data task completion.
  */
-typedef void (^MSDataCompletionHandler)(NSData *data, NSURLResponse *response, NSError *error);
+typedef void (^MSDataCompletionHandler)(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error);
 
 /*
  This class holds the entry point to middleware chain and exposes methods for making different session tasks.
@@ -36,8 +38,8 @@ typedef void (^MSDataCompletionHandler)(NSData *data, NSURLResponse *response, N
  @return The MSURLSessionDataTask ready to be executed.
  */
 
-- (MSURLSessionDataTask *) dataTaskWithRequest:(nonnull NSMutableURLRequest *)request
-                             completionHandler:(MSDataCompletionHandler)completionHandler;
+- (MSURLSessionDataTask *) dataTaskWithRequest:(NSMutableURLRequest *)request
+                             completionHandler:(nullable MSDataCompletionHandler)completionHandler;
 
 /**
  Creates an MSURLSessionDownloadTask ready to be executed.
@@ -46,7 +48,7 @@ typedef void (^MSDataCompletionHandler)(NSData *data, NSURLResponse *response, N
  @return The MSURLSessionDownloadTask ready to be executed.
  */
 
-- (MSURLSessionDownloadTask *)downloadTaskWithRequest:(nonnull NSMutableURLRequest *)request completionHandler:(MSRawDownloadCompletionHandler)completionHandler;
+- (MSURLSessionDownloadTask *)downloadTaskWithRequest:(NSMutableURLRequest *)request completionHandler:(nullable MSRawDownloadCompletionHandler)completionHandler;
 
 /**
  Creates an MSURLSessionUploadTask ready to be executed.
@@ -56,7 +58,7 @@ typedef void (^MSDataCompletionHandler)(NSData *data, NSURLResponse *response, N
  @return The MSURLSessionUploadTask ready to be executed.
  */
 
-- (MSURLSessionUploadTask *)uploadTaskWithRequest:(nonnull NSMutableURLRequest *)request fromData:(nonnull NSData *)bodyData completionHandler:(MSRawUploadCompletionHandler)completionHandler;
+- (MSURLSessionUploadTask *)uploadTaskWithRequest:(NSMutableURLRequest *)request fromData:(NSData *)bodyData completionHandler:(nullable MSRawUploadCompletionHandler)completionHandler;
 
 /**
  Creates an MSURLSessionUploadTask ready to be executed.
@@ -66,6 +68,8 @@ typedef void (^MSDataCompletionHandler)(NSData *data, NSURLResponse *response, N
  @return The MSURLSessionUploadTask ready to be executed.
  */
 
-- (MSURLSessionUploadTask *)uploadTaskWithRequest:(nonnull NSMutableURLRequest *)request fromFile:(nonnull NSURL *)fileURL completionHandler:(MSRawUploadCompletionHandler)completionHandler;
+- (MSURLSessionUploadTask *)uploadTaskWithRequest:(NSMutableURLRequest *)request fromFile:(NSURL *)fileURL completionHandler:(nullable MSRawUploadCompletionHandler)completionHandler;
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -3,6 +3,9 @@
 //
 
 #import "MSURLSessionTask.h"
+
+NS_ASSUME_NONNULL_BEGIN
+
 /**
  An `MSURLSessionTask` to upload content.
  @see MSURLSessionTask
@@ -42,3 +45,5 @@
               completionHandler:(MSUploadCompletionHandler)completionHandler;
 
 @end
+
+NS_ASSUME_NONNULL_END

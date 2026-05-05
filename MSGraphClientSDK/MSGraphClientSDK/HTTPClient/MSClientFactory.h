@@ -6,6 +6,8 @@
 #import "MSHTTPClient.h"
 #import "../Authentication/MSAuthenticationProvider.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface MSClientFactory : NSObject
 
 /*
@@ -35,3 +37,5 @@
 +(MSHTTPClient *)createHTTPClientWithMiddleware:(id<MSGraphMiddleware>)middleware;
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -7,6 +7,8 @@
 
 @class MSURLSessionTask;
 
+NS_ASSUME_NONNULL_BEGIN
+
 /*
 Methods in this protocol keep you updated with the information that Retry Handler might throw.
  */
@@ -25,7 +27,7 @@ This class provides options to control the behaviour of Retry Handler.
 /*
  This property is to hold a reference to the class which will implement the Retry Handler Delegate
  */
-@property (nonatomic, weak) id<MSRetryHandlerDelegate> retryHandlerDelegate;
+@property (nonatomic, weak, nullable) id<MSRetryHandlerDelegate> retryHandlerDelegate;
 
 /*
  Delay which will be used by Retry Handler to determine the interval after which it will retry in case there is no retry-after header present in the response. Upper limit is 180 seconds.
@@ -47,4 +49,6 @@ This class provides options to control the behaviour of Retry Handler.
 - (instancetype)initWithDelay:(NSInteger)delay maxRetries:(NSInteger)maxRetries andError:(NSError **)error;
 
 @end
+
+NS_ASSUME_NONNULL_END
 

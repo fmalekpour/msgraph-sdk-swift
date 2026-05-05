@@ -7,6 +7,8 @@
 #import "../MSAuthenticationProvider.h"
 #import "MSALAuthenticationProviderOptions.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 /*
  This class provides a concrete implementation of the MSAuthenticationProvider protocol defined in
  MSGraphClientSDK and handles authentication token fetching via MSAL.
@@ -23,3 +25,5 @@
                                      andOptions:(MSALAuthenticationProviderOptions *)providerOptions;
 
 @end
+
+NS_ASSUME_NONNULL_END

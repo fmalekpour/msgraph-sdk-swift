@@ -7,6 +7,8 @@
 #ifndef MSConstants_h
 #define MSConstants_h
 
+NS_ASSUME_NONNULL_BEGIN
+
 typedef NS_ENUM(NSInteger, MSClientErrorCode)
 {
     MSCLientErrorCodeSDKUpperLimitReached        = -1,
@@ -78,5 +80,7 @@ extern NSString *const HTTPMethodPut;
 extern NSString *const HTTPMethodPatch;
 extern NSString *const HTTPMethodPost;
 extern NSString *const HTTPMethodDelete;
+
+NS_ASSUME_NONNULL_END
 
 #endif

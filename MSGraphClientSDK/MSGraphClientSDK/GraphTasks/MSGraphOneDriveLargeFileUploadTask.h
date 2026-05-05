@@ -7,10 +7,12 @@
 
 @class MSGraphOneDriveLargeFileUploadTask;
 
+NS_ASSUME_NONNULL_BEGIN
+
 /**
  Completion handler to be called from MSGraphOneDriveLargeFileUploadTask on instance creation.
  */
-typedef void (^OneDriveLargeFileUploadTaskInitCompletionHandler)(MSGraphOneDriveLargeFileUploadTask *fileUploadTask, NSData *data, NSURLResponse *response, NSError *error);
+typedef void (^OneDriveLargeFileUploadTaskInitCompletionHandler)(MSGraphOneDriveLargeFileUploadTask * _Nullable fileUploadTask, NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error);
 
 /**
  This class extends the generic MSLargeFileUploadTask to provide one drive specific dependency injection
@@ -27,6 +29,8 @@ typedef void (^OneDriveLargeFileUploadTaskInitCompletionHandler)(MSGraphOneDrive
  @param chunkSize Size of a small chunk which the file will be split into. Should be in multiples of 320KB. Default value is 5MB.
  @param completionHandler CompletionHandler to be called on completion of this creation process.
  */
-+(void)createOneDriveLargeFileUploadTaskWithHTTPClient:(nonnull MSHTTPClient *)httpClient fileData:(nonnull NSData *)fileData fileName:(nonnull NSString *)fileName filePath:(NSString *)filePath andChunkSize:(NSInteger)chunkSize withCompletion:(OneDriveLargeFileUploadTaskInitCompletionHandler)completionHandler;
++(void)createOneDriveLargeFileUploadTaskWithHTTPClient:(MSHTTPClient *)httpClient fileData:(NSData *)fileData fileName:(NSString *)fileName filePath:(nullable NSString *)filePath andChunkSize:(NSInteger)chunkSize withCompletion:(OneDriveLargeFileUploadTaskInitCompletionHandler)completionHandler;
 
 @end
+
+NS_ASSUME_NONNULL_END

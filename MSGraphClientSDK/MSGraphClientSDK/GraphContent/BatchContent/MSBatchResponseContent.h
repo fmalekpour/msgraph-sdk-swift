@@ -4,6 +4,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /*
  This class can be used to get individual response dictionary or the whole response dictionary from a batch response data.
  */
@@ -17,14 +19,14 @@
  @param error If any error is encountered during the dictionary creation from batchResponseData, it will be assigned to this address.
  @return The MSBatchResponseContent object
  */
-- (instancetype)initWithBatchResponseData:(nonnull NSData *)batchResponseData options:(NSJSONReadingOptions)options error:(NSError **)error;
+- (instancetype)initWithBatchResponseData:(NSData *)batchResponseData options:(NSJSONReadingOptions)options error:(NSError **)error;
 
 /*
  Iterates through the batch response and returns the required response
  @param requestId The requestId of the request for which response is needed
  @return An NSDictionary object containing the requestId, response status, body and headers.
  */
-- (NSDictionary *)getResponseById:(NSString *)requestId;
+- (nullable NSDictionary *)getResponseById:(NSString *)requestId;
 
 /*
  Returns the whole Response dictionary created from the batchResponseData
@@ -33,4 +35,6 @@
 - (NSDictionary *)getResponses;
 
 @end
+
+NS_ASSUME_NONNULL_END
 

@@ -4,6 +4,8 @@
 
 #import "MSURLSessionTask.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 /**
  An MSURLSessionTask to be used for downloading content.
  @see MSURLSessionTask
@@ -27,3 +29,5 @@
              completionHandler:(MSDownloadCompletionHandler)completionHandler;
 
 @end
+
+NS_ASSUME_NONNULL_END

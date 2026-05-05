@@ -4,6 +4,8 @@
 
 #import "MSURLSessionTask.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 /**
  An MSURLSessionTask to be used for retrieving data.
  @see MSURLSessionTask
@@ -21,3 +23,5 @@
                      completion:(MSDataCompletionHandler)completionHandler;
 
 @end
+
+NS_ASSUME_NONNULL_END

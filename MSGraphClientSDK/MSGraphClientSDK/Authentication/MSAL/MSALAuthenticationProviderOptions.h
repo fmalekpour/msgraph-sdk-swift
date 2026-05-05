@@ -5,6 +5,8 @@
 #import <Foundation/Foundation.h>
 #import "../MSAuthenticationProviderOptions.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 /*
  This class provides concrete implementation for MSAuthenticationProviderOptions protocol and options
  mechanism to control the behaviour of Authentication Provider.
@@ -18,3 +20,5 @@
 - (instancetype)initWithScopes:(NSArray<NSString *> *)scopeArray;
 
 @end
+
+NS_ASSUME_NONNULL_END

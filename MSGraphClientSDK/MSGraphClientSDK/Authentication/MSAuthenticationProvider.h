@@ -5,7 +5,9 @@
 #import <Foundation/Foundation.h>
 #import "MSAuthenticationProviderOptions.h"
 
-typedef void(^MSAuthenticationCompletion)(NSMutableURLRequest *request, NSError *error);
+NS_ASSUME_NONNULL_BEGIN
+
+typedef void(^MSAuthenticationCompletion)(NSMutableURLRequest *request, NSError * _Nullable error);
 
 /**
  The `MSAuthenticationProvider` is a protocol that is used to inject authentication into the MSHTTPClient.
@@ -19,6 +21,8 @@ typedef void(^MSAuthenticationCompletion)(NSMutableURLRequest *request, NSError 
  @param completion The completion handler to be called when access token or an error can be returned.
  */
 
-- (void) getAccessTokenForProviderOptions:(id<MSAuthenticationProviderOptions>)authProviderOptions andCompletion:(void (^)(NSString *accessToken, NSError *error))completion;
+- (void) getAccessTokenForProviderOptions:(id<MSAuthenticationProviderOptions>)authProviderOptions andCompletion:(void (^)(NSString * _Nullable accessToken, NSError * _Nullable error))completion;
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -10,6 +10,8 @@
 
 #import "../HTTPClient/MSHTTPClient.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 // Block to be called while iterating through the page
 typedef void (^MSPageIteratorBlock)(NSDictionary *itemDictionary, BOOL *stop);
 
@@ -31,5 +33,7 @@ typedef void (^MSPageIteratorBlock)(NSDictionary *itemDictionary, BOOL *stop);
 // This method starts the iteration through the page values.
 - (void)iterate;
 @end
+
+NS_ASSUME_NONNULL_END
 
 

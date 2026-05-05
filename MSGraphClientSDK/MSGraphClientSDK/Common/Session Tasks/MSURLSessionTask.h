@@ -8,6 +8,8 @@
 #import "../../Middleware/Implementations/HTTPProvider/MSHttpProvider.h"
 #import "../../Middleware/Options/MSMiddlewareOptions.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 /**
  The Upload Completion Handler to be called when an upload is completed.
  */
@@ -17,9 +19,6 @@ typedef MSRawUploadCompletionHandler MSUploadCompletionHandler;
  The download completion handler to be called when a download is completed.
  */
 typedef MSRawDownloadCompletionHandler MSDownloadCompletionHandler;
-
-//Completion handler to be called when request finishes
-typedef void (^HTTPRequestCompletionHandler)(id data, NSURLResponse * _Nullable response, NSError * _Nullable error);
 
 @interface MSURLSessionTask : NSObject
 
@@ -67,3 +66,5 @@ typedef void (^HTTPRequestCompletionHandler)(id data, NSURLResponse * _Nullable 
 - (id<MSMiddlewareOptions>)getMiddlewareOptionWithType:(MSMiddlewareOptionsType)middlewareOptionsType;
 
 @end
+
+NS_ASSUME_NONNULL_END

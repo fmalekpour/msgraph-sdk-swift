@@ -3,6 +3,9 @@
 //
 
 #import "MSHttpProvider.h"
+
+NS_ASSUME_NONNULL_BEGIN
+
 /**
  * 'MSURLSessionManager' manages all Http access from the Graph SDK, it conforms to the MSHttpProvider protocol
  */
@@ -22,3 +25,5 @@
 - (instancetype)initWithSessionConfiguration:(NSURLSessionConfiguration *)urlSessionConfiguration;
 
 @end
+
+NS_ASSUME_NONNULL_END

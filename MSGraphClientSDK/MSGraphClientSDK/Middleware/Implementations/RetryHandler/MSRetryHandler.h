@@ -5,6 +5,8 @@
 #import <Foundation/Foundation.h>
 #import "../../Protocols/MSGraphMiddleware.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 /*
  This class provides the mechanism to handle retry response codes from Graph server. It is implmented as a middleware so it will be called during the execution of network calls.
  */
@@ -21,3 +23,5 @@
 - (instancetype)initWithOptions:(MSRetryHandlerOptions *)retryHandlerOptions;
 
 @end
+
+NS_ASSUME_NONNULL_END
