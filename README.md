@@ -23,21 +23,6 @@ You can add this library using [Swift Package Manager](https://swift.org/package
 
 #### Package.swift
 
-Add the following dependency to your `Package.swift`:
-
-```swift
-dependencies: [
-    .package(url: "https://github.com/fmalekpour/msgraph-sdk-swift", from: "1.0.0"),
-],
-targets: [
-    .target(
-        name: "YourTarget",
-        dependencies: [
-            .product(name: "MSGraphClientSDK", package: "msgraph-sdk-swift"),
-        ]
-    ),
-]
-```
 
 Then import the module in your Swift or Objective-C files:
 
