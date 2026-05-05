@@ -3,7 +3,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MSGraphMiddleware.h"
+#import "../../Protocols/MSGraphMiddleware.h"
 
 /*
  This class provides the mechanism to handle retry response codes from Graph server. It is implmented as a middleware so it will be called during the execution of network calls.

@@ -4,7 +4,7 @@
 
 #import <Foundation/Foundation.h>
 #import "MSHTTPClient.h"
-#import "MSAuthenticationProvider.h"
+#import "../Authentication/MSAuthenticationProvider.h"
 
 @interface MSClientFactory : NSObject
 

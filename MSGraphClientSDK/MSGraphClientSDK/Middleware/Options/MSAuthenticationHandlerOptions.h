@@ -4,8 +4,8 @@
 
 #import <Foundation/Foundation.h>
 #import "MSMiddlewareOptions.h"
-#import "MSAuthenticationProvider.h"
-#import "MSAuthenticationProviderOptions.h"
+#import "../../Authentication/MSAuthenticationProvider.h"
+#import "../../Authentication/MSAuthenticationProviderOptions.h"
 /*
  This class provides options to control the behaviour of Authentication Handler.
  */

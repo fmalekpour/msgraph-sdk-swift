@@ -5,8 +5,8 @@
 @class MSHTTPClient;
 
 #import <Foundation/Foundation.h>
-#import "MSHttpProvider.h"
-#import "MSMiddlewareOptions.h"
+#import "../../Middleware/Implementations/HTTPProvider/MSHttpProvider.h"
+#import "../../Middleware/Options/MSMiddlewareOptions.h"
 
 /**
  The Upload Completion Handler to be called when an upload is completed.

@@ -3,8 +3,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MSAuthenticationProvider.h"
-#import "MSGraphMiddleware.h"
+#import "../../../Authentication/MSAuthenticationProvider.h"
+#import "../../Protocols/MSGraphMiddleware.h"
 
 /*
  This class provides the mechanism to communicate with authentication provider. It is implmented as a middleware so it will be called during the execution of network calls.

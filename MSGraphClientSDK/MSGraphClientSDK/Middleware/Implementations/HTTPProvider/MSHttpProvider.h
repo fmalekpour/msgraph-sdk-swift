@@ -3,7 +3,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MSGraphMiddleware.h"
+#import "../../Protocols/MSGraphMiddleware.h"
 
 /**
  Completion handler to be called from MSHttpProvider on download completion.

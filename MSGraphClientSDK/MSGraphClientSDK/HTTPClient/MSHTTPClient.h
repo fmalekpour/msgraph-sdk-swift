@@ -3,7 +3,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MSGraphMiddleware.h"
+#import "../Middleware/Protocols/MSGraphMiddleware.h"
 
 @class MSURLSessionDataTask, MSURLSessionDownloadTask, MSURLSessionUploadTask;
 

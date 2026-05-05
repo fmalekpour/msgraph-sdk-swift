@@ -3,7 +3,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MSHTTPClient.h"
+#import "../HTTPClient/MSHTTPClient.h"
 
 #define DefaultChunkSize 5*1024*1024
 #define RequiredChunkSizeIncrement 320*1024

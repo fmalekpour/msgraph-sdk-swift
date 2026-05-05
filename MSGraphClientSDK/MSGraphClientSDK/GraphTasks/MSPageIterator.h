@@ -8,7 +8,7 @@
  This class is designed to ease the process of iterating through paged responses.
  */
 
-#import "MSHTTPClient.h"
+#import "../HTTPClient/MSHTTPClient.h"
 
 // Block to be called while iterating through the page
 typedef void (^MSPageIteratorBlock)(NSDictionary *itemDictionary, BOOL *stop);

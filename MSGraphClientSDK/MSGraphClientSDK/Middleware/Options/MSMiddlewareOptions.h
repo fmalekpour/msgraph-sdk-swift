@@ -7,7 +7,7 @@
  */
 
 #import <Foundation/Foundation.h>
-#import "MSConstants.h"
+#import "../../Common/MSConstants.h"
 
 @protocol MSMiddlewareOptions <NSObject>
 
